@@ -1,6 +1,6 @@
 <template>
     <div id="app">  
-        <div>
+        <div style="background-color:#e6e6e6">
             <img class= "header_area" alt="Motomai" src="./images/MotomAI_logo.png">
         </div>
   </div>

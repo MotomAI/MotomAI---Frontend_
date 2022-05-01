@@ -11,7 +11,7 @@ export default {
     name : "titol-panel",
     data() {
         return {
-            titol: 'Panel de control'
+            titol: 'Control panel'
         }
     }
 }
