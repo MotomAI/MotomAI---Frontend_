@@ -6,16 +6,15 @@
       <div class="warning">
         <h1 v-if="warns != null">Hi ha {{warns}} models amb problemes d'estoc</h1>
         <div  v-for= "model in models" :key="model.id">
-          <Model v-if="model.warn == true" v-bind:name="model.name" v-bind:warn="model.warn" v-bind:id ="model.id"></Model>
+          <Model v-if="model.warn == true" v-bind:name="model.name" v-bind:warn="model.warn" v-bind:id ="model.id" v-bind:parts="model.parts"></Model>
         </div>
       </div>
       <div class="search_bar">
         <h1> Cercador de models </h1>
         <input class="search text" type="text" id="search_bar" v-on:keypress=getModelsBySearch() />
-      </div>
-      <div class="warning">
+
         <div v-for= "search in searchs" :key="search.id">
-          <Model v-bind:name="search.name" v-bind:warn="search.warn" v-bind:id ="search.id"></Model>
+          <Model v-bind:name="search.name" v-bind:warn="search.warn" v-bind:id ="search.id" v-bind:parts="search.parts"></Model>
 
         </div>
       </div>
