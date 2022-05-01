@@ -12,11 +12,8 @@
       <div class="search_bar">
         <h1> Cercador de models </h1>
         <input class="search text" type="text" id="search_bar" v-on:keypress=getModelsBySearch() />
-      </div>
-      <div class="warning">
         <div v-for= "search in searchs" :key="search.id">
           <Model v-bind:name="search.name" v-bind:warn="search.warn" v-bind:id ="search.id"></Model>
-
         </div>
       </div>
     </div>  
