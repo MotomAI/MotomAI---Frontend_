@@ -16,6 +16,7 @@
       <div class="warning">
         <div v-for= "search in searchs" :key="search.id">
           <Model v-bind:name="search.name" v-bind:warn="search.warn" v-bind:id ="search.id"></Model>
+
         </div>
       </div>
     </div>  
