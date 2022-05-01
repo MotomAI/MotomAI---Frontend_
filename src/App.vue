@@ -6,7 +6,7 @@
       <div class="warning">
         <h1 v-if="warns != null">Hi ha {{warns}} models amb problemes d'estoc</h1>
         <div  v-for= "model in models" :key="model.id">
-            <Model v-if="model.warn == true" v-bind:name="model.name" v-bind:warn="model.warn" v-bind:id ="model.id"></Model>
+            <Model v-if="model.warn == true" v-bind:name="model.name" v-bind:warn="model.warn" v-bind:id ="model.id" v-bind:parts ="model.parts"></Model>
         
         </div>
       </div>
