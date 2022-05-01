@@ -2,8 +2,8 @@
     <div id="app">
         <button class="color_boto boto_config " v-on:click = getGraph() >{{name}}</button>
             <button v-if = click>
+                <img v-bind:src="graph" />
             </button>
-            <img v-bind:src="graph" />
 
     </div>
 </template>
