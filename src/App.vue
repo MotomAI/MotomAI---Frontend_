@@ -7,6 +7,7 @@
         <h1 v-if="warns != null">Hi ha {{warns}} models amb problemes d'estoc</h1>
         <div  v-for= "model in models" :key="model.id">
             <Model v-if="model.warn == true" v-bind:name="model.name" v-bind:warn="model.warn" v-bind:id ="model.id"></Model>
+        
         </div>
       </div>
     </div>  
@@ -17,7 +18,6 @@
 import Header from './components/Header.vue'
 import Titol from './components/Titol.vue'
 import Model from './components/Model.vue'
-import Graph from './components/Graph.vue'
 import axios from 'axios'
 
 export default {
@@ -26,7 +26,6 @@ export default {
     Header,
     Titol,
     Model,
-    Graph,
   },
   data() {
     return {
