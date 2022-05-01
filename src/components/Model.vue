@@ -3,7 +3,7 @@
         <button class="color_boto boto_config " v-on:click = getGraph() >{{name}}</button>
             <button v-if = click>
             </button>
-            <img v-bind:src="'data:image/jpg;base64,'+graph" />
+            <img v-bind:src="graph" />
 
     </div>
 </template>
@@ -39,7 +39,7 @@ export default {
         this.click = !this.click
         await axios.get('http://34.134.230.81/graph/' + this.id)
             .then(response => {
-            this.graph = response.data.graph ;
+            this.graph = 'data:image/png;base64,'+response.data.graph ;
             
             console.log(this.graph);
             })
