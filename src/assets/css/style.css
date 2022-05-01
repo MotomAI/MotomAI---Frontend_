@@ -18,7 +18,7 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     
 }
-h2, p, i, address, .tm-text-white , td {
+h2, p, i, address, .text , td {
     color: #000000;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -59,7 +59,6 @@ h2, p, i, address, .tm-text-white , td {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     list-style: none;
-    margin-left: 30px;
     width: 500px;
 }
 
@@ -74,7 +73,7 @@ textarea {
     background: transparent;
     border: 0;
     border-bottom: 1px solid rgb(0, 0, 0);
-    color: rgb(255, 185, 128);
+    color: rgb(0, 0, 0);
     padding: 15px 0;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -87,18 +86,22 @@ textarea {
     text-align: center;
     margin-top: 50px;
     margin-left: 50px;
-    margin-right: 50px;
+    padding-right: 90px;
+    padding-left: 90px;
     border-color: #000000;
     border-width: 2px;
     border-style: output;
 }
 
-.search {
+.search_bar {
     background-color: #e6e6e6; 
     list-style-type: none;
-    text-align: center;
-    margin: 50px 800px;
+    text-align: left    ;
+    margin-top: 50px;
     margin-left: 50px;
+    padding-right: 250px;
+    padding-left: 30px;
+    padding-bottom: 30px;
     border-color: #000000;
     border-width: 2px;
     border-style: output;
@@ -109,11 +112,23 @@ textarea {
     list-style-type: none;
     text-align: center;
     align-content: right;
-    margin: 50px 100px;
-    margin-right: 50px;
     border-color: #000000;
     border-width: 2px;
     border-style: output;
+}
+
+.search {
+    background-color: #ffffff; 
+    list-style-type: none;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-right: 170px;
+    padding-left: 30px;
+    border-color: #6e6e6e;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
 }
 
 

@@ -1,7 +1,8 @@
 <template>
     <div id="app">  
-        <img class= "header_area" alt="Motomai" src="./images/MotomAI_logo.png">
-
+        <div>
+            <img class= "header_area" alt="Motomai" src="./images/MotomAI_logo.png">
+        </div>
   </div>
 </template>
 

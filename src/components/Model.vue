@@ -1,10 +1,9 @@
 <template>
     <div id="app">
-        <button class="color_boto boto_config " v-on:click = getGraph() >{{name}}</button>
+        <button class="color_boto boto_config " v-on:click = getGraph()>{{name}}</button>
             <button v-if = click>
                 <img v-bind:src="graph" />
             </button>
-
     </div>
 </template>
 
@@ -17,7 +16,6 @@ export default {
         return {
             click: false,
             graph: '',
-
         }
     },
     props: {
